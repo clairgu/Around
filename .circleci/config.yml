@@ -8,6 +8,6 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: |
-          docker build -t your-dockerHub-user/around .
+          docker build -t clairgu/around .
           docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
-          docker push your-dockerHub-user/around
+          docker push clairgu/around
